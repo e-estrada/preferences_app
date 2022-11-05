@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:preferences_app/share_preferences/preferences.dart';
 import 'package:preferences_app/widgets/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -16,20 +17,20 @@ class HomeScreen extends StatelessWidget {
       drawer: const SideMenu(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
-          Text('isDarkMode'),
+        children: [
+          Text('isDarkMode: ${Preferences.isDarkMode}'),
 
-          Divider(),
+          const Divider(),
 
-          Text('Género'),
-
-
-          Divider(),
+          Text('Género: ${Preferences.gender}'),
 
 
-          Text('Nombre de usuario'),
+          const Divider(),
 
-          Divider(),
+
+          Text('Nombre de usuario: ${Preferences.name}'),
+
+          const Divider(),
 
         ],
       ),
