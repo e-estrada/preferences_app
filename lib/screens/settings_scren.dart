@@ -65,7 +65,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
-                  initialValue: 'Erick Estrada',
+                  initialValue: name,
                   onChanged: (value) {
                     name = value;
                     setState(() {});
